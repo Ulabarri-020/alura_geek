@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="./estilos/style.css" />
+    <link rel="shortcut icon" href="img/ventas.png" type="image/x-icon" />
+</head>
+
+<body>
+    <header>
+        <div class="encabezado">
+            <img src="img/corazones.png" class="encabezado_corazones" alt="corazones presentación" />
+            <h1>ALURA GEEK</h1>
+        </div>
+    </header>
+
+    <nav></nav>
+    <main>
+        <section class="productos">
+            <h1 id="titulo">Mis productos</h1>
+
+            <ul class="videos_container" data-lista></ul>
+        </section>
+        <section class="formulario_container">
+            <form action="" data-formulario>
+                <div class="formulario">
+                    <h1>AGREGAR PRODUCTO:</h1>
+                    <div class="inputs">
+                        <input type="text" placeholder="nombre..." data-nombre required />
+                        <input type="number" placeholder="precio..." data-precio required />
+                        <input type="url" placeholder="imagen..." data-imagen required />
+                    </div>
+                    <div class="botones_formulario">
+                        <input class="btn_1" type="submit" value="Enviar" data-boton-agregar />
+                        <input class="btn_2" type="submit" value="Limpiar" data-boton-limpiar />
+                    </div>
+        
+                </div>
+            </form>
+        </section>
+        <aside></aside>
+    </main>
+
+    <footer>
+        <div class="titulo">
+            <img src="img/corazones.png" class="encabezado_corazones" alt="corazones presentación" />
+            <h1>Alura Geek</h1>
+        </div>
+        <div class="descripcion">
+            <h3>Desarrollado por Alfredo Sandoval Ulabarri</h3>
+            <h4>Alura LATAM - 2024</h4>
+        </div>
+    </footer>
+
+    <!-- Importa tu archivo JavaScript -->
+    <script src="js/motrar_datos.js " type="module" defer></script>
+    <script src="js/crearProducto.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+/* Importa la fuente */
+@font-face {
+  font-family: "fuente_principal";
+  src: url("/fuente_principal.ttf");
+}
+/* Define la variable */
+:root {
+  --fuente-principal: "fuente_principal";
+  --color_principal: #03318c;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* Usa la variable */
+h2,
+h3,
+h4,
+p {
+  color: white;
+  font-size: 0.5rem;
+  font-family: var(--fuente-principal);
+}
+/*header*/
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: var(--color_principal);
+  width: 100%;
+  top: 0;
+  position: absolute;
+}
+#titulo {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  font-family: var(--fuente-principal);
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+}
+/*contenido de nuestra api*/
+main {
+  display: flex;
+  margin: 0% 0% 10% 0%;
+}
+.productos {
+  height: 100%;
+  width: 758px;
+  padding: 0% 5% 0% 0%;
+  margin: 10% 0% 0% 10%;
+  box-shadow: -12px 10px 5.8px 0px #00000040;
+}
+.videos_container {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 100%;
+  overflow-y: scroll;
+  gap: 20px;
+  height: 400px;
+}
+.card {
+  /*border: #5300C8 solid 10px;*/
+  width: 100%;
+  height: 100%;
+}
+.card_container {
+  width: 90%;
+  flex-wrap: wrap;
+  height: 95%;
+  background: var(--color_principal);
+  border: solid black;
+  margin: 0% 5% 5% 0%;
+  border-radius: 10px 0px 0px 0px;
+  border: 3px 0px 0px 0px;
+}
+.card__imagen {
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 5%;
+  flex-shrink: 1;
+  height: 174px;
+  border: solid black;
+  border-radius: 5px 0px 0px 0px;
+  border: 3px 0px 0px 0px;
+}
+.card-container--info {
+  padding: 0% 5% 0% 5%;
+}
+.card-container--value {
+  display: flex;
+  justify-content: space-between;
+}
+.eliminar-imagen {
+  width: 20px;
+  height: 20px;
+}
+.imagen_basura {
+  position: relative;
+  left: 95%;
+  width: 10%;
+  flex-wrap: wrap;
+}
+/*formulario */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  margin: 40% 0% 0% 5%;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  font-family: var(--fuente-principal);
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 5%;
+  gap: 10px;
+  opacity: 0px;
+}
+.inputs input {
+  border-radius: 20px;
+  padding: 5% 0% 5% 5%;
+  width: 100%;
+  height: 100%;
+  font-family: var(--fuente-principal);
+}
+.botones_formulario {
+  width: 100%;
+  height: 10%;
+  gap: 13px;
+  opacity: 0px;
+  display: flex;
+  margin: 5% 0% 0% 0%;
+  justify-content: center;
+}
+.btn_1 {
+  width: 30%;
+  height: 20%;
+  gap: 0px;
+  border-radius: 15px 15px 15px 15px;
+  background: #03318c;
+  color: white;
+  padding: 2% 2% 2% 2%;
+}
+.btn_2 {
+  width: 30%;
+  height: 20%;
+  gap: 0px;
+  border-radius: 15px 15px 15px 15px;
+  background: #ffffff;
+  color: #03318c;
+  border: #03318c solid;
+  padding: 2% 2% 2% 2%;
+}
+/*pie de pagina */
+footer {
+  color: white;
+  background: var(--color_principal);
+  padding: 5% 0% 5% 0%;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+.titulo {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+.descripcion {
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 10px;
+}
+/* max 425 px*/
+@media (max-width: 425px) {
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    margin: -15% 0% 0% 0%;
+  }
+  .productos {
+    display: flex;
+    flex-direction: column;
+    width: 87%;
+    margin: 5% 0% 0% 0%;
+  }
+  #titulo {
+  margin: 0% 0% 0% 15%;
+  font-size: 1.5rem;
+  }
+  .videos_container {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom:0% ;
+    height: 200px;
+    padding: 5% 5% 5% 10%;
+  }
+  .card {
+    display: flex;
+    width: 200px;
+    height: 100%;
+    flex-direction: column;
+    margin: 0% 0% 0% 0%;
+  }
+  .card_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .card__imagen {
+    width: 90%;
+   margin: 2% 0% 0% 3%;
+    flex-shrink: 1;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+}
+@media (max-width: 425px) {
+  main{
+    margin: -5% 0% 0% 0%;
+  }
+  .encabezado h1 {
+    font-size: 1.5rem;
+    }
+}
